@@ -1,0 +1,12 @@
+https://github.com/mioc1/grupaAM
+
+SELECT
+    knjiga.naslov,
+    autor.prezime_ime AS autor
+FROM
+    knjiga
+JOIN autor ON knjiga.autor = autor.id
+WHERE
+    autor.prezime_ime = 'Josip Kozarac'
+ORDER BY
+    knjiga.naslov ASC
