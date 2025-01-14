@@ -10,3 +10,13 @@ WHERE
     autor.prezime_ime = 'Josip Kozarac'
 ORDER BY
     knjiga.naslov ASC
+
+
+SELECT
+    biljka.naziv,
+    vrsta.naziv AS vrsta
+FROM
+    biljka
+JOIN vrsta ON biljka.vrsta = vrsta.id
+WHERE
+    biljka.cijena <= 5;
